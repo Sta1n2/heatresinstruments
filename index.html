@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Heat Convert</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер величин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Конвертер величин</h1>
+        
+        <!-- Блок тепловой энергии -->
+        <div class="converter-block">
+            <h2>Тепловая энергия</h2>
+            <div class="converter">
+                <input type="number" id="energyValue" placeholder="Введите значение">
+                <select id="energyFrom">
+                    <option value="GJ">Гигаджоуль (ГДж)</option>
+                    <option value="MJ">Мегаджоуль (МДж)</option>
+                    <option value="kWh">Киловатт-час (кВт·ч)</option>
+                    <option value="Mcal">Мегакалория (Мкал)</option>
+                    <option value="Gcal">Гигакалория (Гкал)</option>
+                </select>
+                <span>→</span>
+                <select id="energyTo">
+                    <option value="MJ">Мегаджоуль (МДж)</option>
+                    <option value="GJ">Гигаджоуль (ГДж)</option>
+                    <option value="kWh">Киловатт-час (кВт·ч)</option>
+                    <option value="Mcal">Мегакалория (Мкал)</option>
+                    <option value="Gcal">Гигакалория (Гкал)</option>
+                </select>
+                <button onclick="convertEnergy()">Конвертировать</button>
+                <div class="result" id="energyResult"></div>
+            </div>
+        </div>
+        
+        <!-- Блок давления -->
+        <div class="converter-block">
+            <h2>Давление</h2>
+            <div class="converter">
+                <input type="number" id="pressureValue" placeholder="Введите значение">
+                <select id="pressureFrom">
+                    <option value="MPa">Мегапаскаль (МПа)</option>
+                    <option value="kPa">Килопаскаль (кПа)</option>
+                    <option value="kgf_cm2">Килограмм-сила на см² (кгс/см²)</option>
+                    <option value="bar">Бар</option>
+                    <option value="atm">Атмосфера (атм)</option>
+                    <option value="psi">Фунт-сила на дюйм² (psi)</option>
+                </select>
+                <span>→</span>
+                <select id="pressureTo">
+                    <option value="kPa">Килопаскаль (кПа)</option>
+                    <option value="MPa">Мегапаскаль (МПа)</option>
+                    <option value="kgf_cm2">Килограмм-сила на см² (кгс/см²)</option>
+                    <option value="bar">Бар</option>
+                    <option value="atm">Атмосфера (атм)</option>
+                    <option value="psi">Фунт-сила на дюйм² (psi)</option>
+                </select>
+                <button onclick="convertPressure()">Конвертировать</button>
+                <div class="result" id="pressureResult"></div>
+            </div>
+        </div>
+        
+        <!-- Блок температуры -->
+        <div class="converter-block">
+            <h2>Температура</h2>
+            <div class="converter">
+                <input type="number" id="tempValue" placeholder="Введите значение">
+                <select id="tempFrom">
+                    <option value="C">Цельсий (°C)</option>
+                    <option value="F">Фаренгейт (°F)</option>
+                    <option value="K">Кельвин (K)</option>
+                    <option value="R">Ранкин (°R)</option>
+                </select>
+                <span>→</span>
+                <select id="tempTo">
+                    <option value="F">Фаренгейт (°F)</option>
+                    <option value="C">Цельсий (°C)</option>
+                    <option value="K">Кельвин (K)</option>
+                    <option value="R">Ранкин (°R)</option>
+                </select>
+                <button onclick="convertTemperature()">Конвертировать</button>
+                <div class="result" id="tempResult"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  <footer>
+    <p>© TEK 2025</p>
+  </footer>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
